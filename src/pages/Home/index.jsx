@@ -12,7 +12,7 @@ function Home() {
       </div>
       <div className="home-cards">
         {Datas.map((location) => (
-          <Cards location={location} id={location.id} />
+          <Cards location={location} id={location.id} key={location.id} />
         ))}
       </div>
     </div>

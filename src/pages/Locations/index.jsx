@@ -56,6 +56,7 @@ function Locations() {
           <div className="star-div">
             {[...Array(5)].map((x, index) => (
               <FontAwesomeIcon
+                key={index}
                 icon={faStar}
                 className={
                   index < dataCurrentLocation[0].rating ? 'active' : ''
