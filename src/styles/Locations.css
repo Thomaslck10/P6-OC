@@ -1,0 +1,140 @@
+.locations-div{
+    margin: 1rem 0;
+}
+
+.title-div{
+    display: flex;
+    flex-direction: column;
+    padding-left:3rem;
+}
+
+h1, h2{
+    margin: 0;
+    color: #FF6060;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 36px;
+    margin-bottom: 0.5rem;
+}
+
+h2{
+    font-size: 18px;
+}
+
+.grid-div{
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.host-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right:3rem;
+}
+
+.host-img{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    background-color: black;
+    margin-left: 0.5rem;
+    object-fit: cover;
+}
+
+.host2-div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.star-div{
+    display: flex;
+}
+
+.fa-star.active{
+    color: #FF6060;
+}
+
+.fa-star{
+    color: #e3e3e3;
+    height: 24px;
+    width: 24px;
+    padding-left: 0.6rem;
+}
+
+.tags{
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.tag{
+    background-color: #ff6060;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 1.5rem;
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.collapse-location{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 0 3rem;
+}
+
+.location-carousel{
+    padding: 0 3rem;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px){
+    .grid-div{
+        grid-template-columns: 1fr;
+    }
+    .host-div{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 3rem;
+        margin-bottom: 1rem; 
+    }
+    .host2-div{
+        margin-bottom: 0;
+    }
+    .fa-star{
+        padding-left: 0;
+        padding-right: 0.6rem;
+    }
+    .collapse-location{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .locations-title{
+        font-size: 26px;
+    }
+    .host-img{
+        width: 50px ;
+        height: 50px ;
+    }
+    .location-carousel{
+        padding: 0 1.5rem;
+    }
+    .title-div{
+        padding: 0 1.5rem;
+    }
+    .host-div{
+        padding: 0 1.5rem;
+    }
+    .collapse-location{
+        padding: 0 1.5rem;
+    }
+}

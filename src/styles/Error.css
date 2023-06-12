@@ -1,0 +1,49 @@
+.error-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff6060;
+}
+
+.error-404 {
+  font-weight: 700;
+  font-size: 288px;
+  margin: 4rem 0 0 0;
+}
+
+.error-p {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.error-nav {
+  margin: 7rem 0;
+}
+
+.error-link {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 5rem;
+  color: #ff6060;
+}
+
+@media screen and (max-width: 768px){
+  .error-404{
+    font-size: 110px;
+  }
+  .error-p{
+    font-size: 22px;
+  }
+  .error-div{
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:1042px){
+  .error-404{
+    font-size: 150px;
+  }
+  .error-p {
+    font-size: 28px;
+  }
+}
