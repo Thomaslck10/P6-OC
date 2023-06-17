@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
-function Collapse({ title, content, opendefault }) {
-  const [toggle, setToggle] = useState(opendefault);
+function Collapse({ title, content}) {
+  const [toggle, setToggle] = useState();
 
   return (
     <div className="collapse">
